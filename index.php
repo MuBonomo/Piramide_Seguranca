@@ -1,6 +1,6 @@
 <?php
 /**********************************************************************************************************
-Pirâmide de Segurança
+Pirâmide de Segurança - HSE
 
 Autor: Murilo Ibrahim Bonomo
 Data: 29/01/2020
