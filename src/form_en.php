@@ -135,13 +135,13 @@
             </div>
         </header>
 
-        <main class="uk-container">
+        <main>
             <div class="uk-text-center" style="  display: flex;  padding:1px;">
                 <div class="uk-width-1-4">
                    
                 </div>
                 
-                <div class="uk-width-1-2" >
+                <div class="uk-width-1-1" >
                     <form class="uk-grid-small" uk-grid method="POST" action="">
 
                         <div class="uk-width-1-3">
@@ -174,22 +174,22 @@
                             <h4 style="border-top-style: solid; border-width:1px; border-color:lightgray">Event Type</h4>
                         </div>
                         <div class="uk-width-1-1@s" style="display:flex">
-                            <div class="uk-width-1-4@s">
+                            <div class="uk-width-1-4@s" uk-tooltip="Failures, defects, technical irregularities and lack of security devices that put at risk the physical integrity, health of people, installations or equipments">
                                 <label><input class="uk-radio" type="radio" name="t_evento" value="Risco"> Risck Condition</label>
                             </div>
-                            <div class="uk-width-1-4@s">
+                            <div class="uk-width-1-4@s" uk-tooltip="Demage to the company's structure, which may involve machines, equipment, among others">
                                 <label><input class="uk-radio" type="radio" name="t_evento" value="Material"> Material Damage</label>
                             </div>
-                            <div class="uk-width-1-4@s">
+                            <div class="uk-width-1-4@s" uk-tooltip="Damage to the products stored or produced by the company">
                                 <label><input class="uk-radio" type="radio" name="t_evento" value="Produto"> Product Damage</label>
                             </div>
-                            <div class="uk-width-1-4@s">    
-                                <label><input class="uk-radio" type="radio" name="t_evento" value="Acidente"> People Accident</label>
+                            <div class="uk-width-1-4@s" uk-tooltip="Accidents that might happen with employess, third parts or visitors">    
+                                <label><input class="uk-radio" type="radio" name="t_evento" value="Acidente"> Occupational Accident</label>
                             </div>
                         </div>
 
                         <div class="uk-width-1-1@s">
-                            <h4 style="border-top-style: solid; border-width:1px; border-color:lightgray">Nature of Event</h4>
+                            <h4 style="border-top-style: solid; border-width:1px; border-color:lightgray">Nature of the Event</h4>
                         </div>
                         <div class="uk-width-1-1@s" style="display:flex">
                             <div class="uk-width-1-2@s">
@@ -211,10 +211,10 @@
                                 <label><input class="uk-radio" type="radio" name="equipamento" value="Empilhadeira"> Electric Forklift</label>
                             </div>
                             <div class="uk-width-1-4@s">
-                                <label><input class="uk-radio" type="radio" name="equipamento" value="Eletrica"> Electric Conveyor</label>
+                                <label><input class="uk-radio" type="radio" name="equipamento" value="Eletrica"> Electric Pallet Trucks</label>
                             </div>
                             <div class="uk-width-1-4@s">
-                                <label><input class="uk-radio" type="radio" name="equipamento" value="Manual"> Manual Conveyor</label>
+                                <label><input class="uk-radio" type="radio" name="equipamento" value="Manual"> Manual Pallet Trucks</label>
                             </div>
                             <div class="uk-width-1-4@s">    
                                 <label><input class="uk-radio" type="radio" name="equipamento" value="Outros" id="outros" onclick="habilitar()"> Others</label>
@@ -225,7 +225,7 @@
                         </div>
 
                         <div class="uk-width-1-1@s">
-                            <h4 style="border-top-style: solid; border-width:1px; border-color:lightgray">Employees</h4>
+                            <h4 style="border-top-style: solid; border-width:1px; border-color:lightgray">People Involved</h4>
                         </div>
                         <div class="uk-width-1-1@s" style="display:flex">
                             <div class="uk-width-1-3@s">
@@ -244,7 +244,7 @@
                         </div>
 
                         <div class="uk-width-1-1@s">
-                            <input class="uk-input" type="text" placeholder="Sugestions" name="obs">
+                            <input class="uk-input" type="text" placeholder="Suggestions" name="obs">
                         </div>
 
                         <div class="uk-width-1-1@s">

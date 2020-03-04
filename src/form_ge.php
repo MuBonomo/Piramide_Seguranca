@@ -135,13 +135,13 @@
             </div>
         </header>
 
-        <main class="uk-container">
+        <main>
             <div class="uk-text-center" style="  display: flex;  padding:1px;">
                 <div class="uk-width-1-4">
                    
                 </div>
                 
-                <div class="uk-width-1-2" >
+                <div class="uk-width-1-1" >
                     <form class="uk-grid-small" uk-grid method="POST" action="">
 
                         <div class="uk-width-1-3">
