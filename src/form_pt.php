@@ -96,6 +96,7 @@
 
         <header >   
             <nav class="uk-background-contain uk-background-top-center" style="background-image: url('../img/bosch-faixa.png'); background-color:#FFFFFF"  uk-navbar>
+            
                 <div class="uk-navbar-left">
 
                     <ul class="uk-navbar-nav" >
@@ -105,20 +106,20 @@
                     </ul>
 
                 </div>
+
+                <div class="uk-navbar-right">
+                    <div>
+                        <img src="../img/bosch-logo.png" style="width: 150px; margin-right:20px; margin-top:10px">
+                    </div>
+                </div>
+
             </nav>
 
-            <div class="uk-text-center" style="display: flex;">
+            <div class="uk-text-center " style="display: flex;">
 
                 <div class="uk-width-1-3" style="display:flex">
 
                     <div class="uk-width-1-3"></div>
-                    
-                    <div class="uk-width-1-3">
-                        <a href="form_pt.php"><img src="../img/brazil.png"></a>
-                        <a href="form_en.php"><img src="../img/england.png"></a>
-                        <a href="form_ge.php"><img src="../img/germany.png"></a>
-                    </div>
-
 
                     <div class="uk-width-1-3"></div>
 
@@ -131,7 +132,6 @@
                 </div>
                 <div class="uk-width-1-3">
                     <div>
-                        <img src="../img/bosch-logo.png" style="width: 150px;">
                     </div>
                 </div> 
             </div>
@@ -144,17 +144,32 @@
                 </div>
                 
                 <div class="uk-width-1-1" >
-                    <form class="uk-grid-small" uk-grid method="POST" action="">
+                    <form class="uk-grid-small uk-card uk-card-default uk-card-body" uk-grid method="POST" action="">
+                    
+                        <div class="uk-width-1-3 uk-text-left">
+                            <a href="form_pt.php"><img src="../img/brazil.png"></a>
+                            <a href="form_en.php"><img src="../img/england.png"></a>
+                            <a href="form_ge.php"><img src="../img/germany.png"></a>
+                        </div>
+                        <div class="uk-width-1-3"></div>
+                        <div class="uk-width-1-3"></div>
 
-                        <div class="uk-width-1-3">
+                        <div class="uk-width-1-4">
                             <input class="uk-input" type="date" name="data" required>
                         </div>
-                        <div class="uk-width-1-3@s">
+                        <div class="uk-width-1-4@s">
                             <input class="uk-input" type="time" name="hora" required>
                         </div>
-                        <div class="uk-width-1-3@s">
+                        <div class="uk-width-1-4@s">
                             <label><input class="uk-radio" type="radio" name="turno" value="1"> 1ºT</label>
                             <label><input class="uk-radio" type="radio" name="turno" value="2"> 2ºT</label>
+                        </div>
+                        <div class="uk-width-1-4@s">
+                            <select class="uk-select">
+                                <option>ITV</option>
+                                <option>CGS</option>
+                                <option>CSA</option>
+                            </select>
                         </div>
 
                         <div class="uk-width-1-1@s">
@@ -176,16 +191,16 @@
                             <h4 style="border-top-style: solid; border-width:1px; border-color:lightgray">Tipo do Evento</h4>
                         </div>
                         <div class="uk-width-1-1@s" style="display:flex">
-                            <div class="uk-width-1-4@s" uk-tooltip="Hello World">
+                            <div class="uk-width-1-4@s" uk-tooltip="São falhas, defeitos, irregularidades técnicas e carência de dispositivos de segurança que põe em risco a integridade física e/ou a saúde das pessoas e a própria segurança das instalações e equipamentos">
                                 <label><input class="uk-radio" type="radio" name="t_evento" value="Risco"> Condição de Risco</label>
                             </div>
-                            <div class="uk-width-1-4@s" uk-tooltip="Hello World">
+                            <div class="uk-width-1-4@s" uk-tooltip="São danos ocorridos apenas a estrutura da empresa, esta que pode envolver, maquinários, equipamentos entre outros">
                                 <label><input class="uk-radio" type="radio" name="t_evento" value="Material"> Dano Material</label>
                             </div>
-                            <div class="uk-width-1-4@s" uk-tooltip="Hello World">
+                            <div class="uk-width-1-4@s" uk-tooltip="São danos aos produtos armazenados e/ou produzidos na empresa">
                                 <label><input class="uk-radio" type="radio" name="t_evento" value="Produto"> Danos ao Produto</label>
                             </div>
-                            <div class="uk-width-1-4@s" uk-tooltip="Hello World">    
+                            <div class="uk-width-1-4@s" uk-tooltip="São acidentes com as pessoas que trabalham dentro das dependências da empresa, bem como visitantes">    
                                 <label><input class="uk-radio" type="radio" name="t_evento" value="Acidente"> Acidente com Pessoas</label>
                             </div>
                         </div>
@@ -194,10 +209,10 @@
                             <h4 style="border-top-style: solid; border-width:1px; border-color:lightgray">Natureza do Evento</h4>
                         </div>
                         <div class="uk-width-1-1@s" style="display:flex">
-                            <div class="uk-width-1-2@s" uk-tooltip="Hello World">
+                            <div class="uk-width-1-2@s" >
                                 <label><input class="uk-radio" type="radio" name="n_evento" value="Instalacoes"> Instalações</label>
                             </div>
-                            <div class="uk-width-1-2@s" uk-tooltip="Hello World">
+                            <div class="uk-width-1-2@s" >
                                 <label><input class="uk-radio" type="radio" name="n_evento" value="Comportamento"> Atitude/Comportamento</label>
                             </div>
                         </div>
@@ -254,10 +269,12 @@
                         </div>
 
                     </form>
+                    <br>
 
                 </div>
 
                 <div class="uk-width-1-4" ></div> 
+                
 
             </div>
 
