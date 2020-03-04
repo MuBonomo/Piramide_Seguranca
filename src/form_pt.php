@@ -96,6 +96,7 @@
 
         <header >   
             <nav class="uk-background-contain uk-background-top-center" style="background-image: url('../img/bosch-faixa.png'); background-color:#FFFFFF"  uk-navbar>
+            
                 <div class="uk-navbar-left">
 
                     <ul class="uk-navbar-nav" >
@@ -105,20 +106,20 @@
                     </ul>
 
                 </div>
+
+                <div class="uk-navbar-right">
+                    <div>
+                        <img src="../img/bosch-logo.png" style="width: 150px; margin-right:20px; margin-top:10px">
+                    </div>
+                </div>
+
             </nav>
 
-            <div class="uk-text-center" style="display: flex;">
+            <div class="uk-text-center " style="display: flex;">
 
                 <div class="uk-width-1-3" style="display:flex">
 
                     <div class="uk-width-1-3"></div>
-                    
-                    <div class="uk-width-1-3">
-                        <a href="form_pt.php"><img src="../img/brazil.png"></a>
-                        <a href="form_en.php"><img src="../img/england.png"></a>
-                        <a href="form_ge.php"><img src="../img/germany.png"></a>
-                    </div>
-
 
                     <div class="uk-width-1-3"></div>
 
@@ -131,7 +132,6 @@
                 </div>
                 <div class="uk-width-1-3">
                     <div>
-                        <img src="../img/bosch-logo.png" style="width: 150px;">
                     </div>
                 </div> 
             </div>
@@ -144,17 +144,32 @@
                 </div>
                 
                 <div class="uk-width-1-1" >
-                    <form class="uk-grid-small" uk-grid method="POST" action="">
+                    <form class="uk-grid-small uk-card uk-card-default uk-card-body" uk-grid method="POST" action="">
+                    
+                        <div class="uk-width-1-3 uk-text-left">
+                            <a href="form_pt.php"><img src="../img/brazil.png"></a>
+                            <a href="form_en.php"><img src="../img/england.png"></a>
+                            <a href="form_ge.php"><img src="../img/germany.png"></a>
+                        </div>
+                        <div class="uk-width-1-3"></div>
+                        <div class="uk-width-1-3"></div>
 
-                        <div class="uk-width-1-3">
+                        <div class="uk-width-1-4">
                             <input class="uk-input" type="date" name="data" required>
                         </div>
-                        <div class="uk-width-1-3@s">
+                        <div class="uk-width-1-4@s">
                             <input class="uk-input" type="time" name="hora" required>
                         </div>
-                        <div class="uk-width-1-3@s">
+                        <div class="uk-width-1-4@s">
                             <label><input class="uk-radio" type="radio" name="turno" value="1"> 1ºT</label>
                             <label><input class="uk-radio" type="radio" name="turno" value="2"> 2ºT</label>
+                        </div>
+                        <div class="uk-width-1-4@s">
+                            <select class="uk-select">
+                                <option>ITV</option>
+                                <option>CGS</option>
+                                <option>CSA</option>
+                            </select>
                         </div>
 
                         <div class="uk-width-1-1@s">
@@ -254,10 +269,12 @@
                         </div>
 
                     </form>
+                    <br>
 
                 </div>
 
                 <div class="uk-width-1-4" ></div> 
+                
 
             </div>
 
