@@ -191,16 +191,16 @@
                             <h4 style="border-top-style: solid; border-width:1px; border-color:lightgray">Tipo do Evento</h4>
                         </div>
                         <div class="uk-width-1-1@s" style="display:flex">
-                            <div class="uk-width-1-4@s" uk-tooltip="Hello World">
+                            <div class="uk-width-1-4@s" uk-tooltip="São falhas, defeitos, irregularidades técnicas e carência de dispositivos de segurança que põe em risco a integridade física e/ou a saúde das pessoas e a própria segurança das instalações e equipamentos">
                                 <label><input class="uk-radio" type="radio" name="t_evento" value="Risco"> Condição de Risco</label>
                             </div>
-                            <div class="uk-width-1-4@s" uk-tooltip="Hello World">
+                            <div class="uk-width-1-4@s" uk-tooltip="São danos ocorridos apenas a estrutura da empresa, esta que pode envolver, maquinários, equipamentos entre outros">
                                 <label><input class="uk-radio" type="radio" name="t_evento" value="Material"> Dano Material</label>
                             </div>
-                            <div class="uk-width-1-4@s" uk-tooltip="Hello World">
+                            <div class="uk-width-1-4@s" uk-tooltip="São danos aos produtos armazenados e/ou produzidos na empresa">
                                 <label><input class="uk-radio" type="radio" name="t_evento" value="Produto"> Danos ao Produto</label>
                             </div>
-                            <div class="uk-width-1-4@s" uk-tooltip="Hello World">    
+                            <div class="uk-width-1-4@s" uk-tooltip="São acidentes com as pessoas que trabalham dentro das dependências da empresa, bem como visitantes">    
                                 <label><input class="uk-radio" type="radio" name="t_evento" value="Acidente"> Acidente com Pessoas</label>
                             </div>
                         </div>
@@ -209,10 +209,10 @@
                             <h4 style="border-top-style: solid; border-width:1px; border-color:lightgray">Natureza do Evento</h4>
                         </div>
                         <div class="uk-width-1-1@s" style="display:flex">
-                            <div class="uk-width-1-2@s" uk-tooltip="Hello World">
+                            <div class="uk-width-1-2@s" >
                                 <label><input class="uk-radio" type="radio" name="n_evento" value="Instalacoes"> Instalações</label>
                             </div>
-                            <div class="uk-width-1-2@s" uk-tooltip="Hello World">
+                            <div class="uk-width-1-2@s" >
                                 <label><input class="uk-radio" type="radio" name="n_evento" value="Comportamento"> Atitude/Comportamento</label>
                             </div>
                         </div>
