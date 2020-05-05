@@ -41,7 +41,7 @@
     </body>
     
     <script src='../assets/js/uikit.js'></script>
-        <script src='../assets/js/uikit-icons.js'></script>
+    <script src='../assets/js/uikit-icons.js'></script>
     
     </html>
     ";
